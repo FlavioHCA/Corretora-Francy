@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.L`Occitane-Immortelle-Divine-1-hex { color: #D9B504; }
+.L`Occitane-Immortelle-Divine-2-hex { color: #D9A404; }
+.L`Occitane-Immortelle-Divine-3-hex { color: #BF7E04; }
+.L`Occitane-Immortelle-Divine-4-hex { color: #8C4E03; }
+.L`Occitane-Immortelle-Divine-5-hex { color: #732C02; }
+
+/* Color Theme Swatches in RGBA */
+.L`Occitane-Immortelle-Divine-1-rgba { color: rgba(216, 181, 4, 1); }
+.L`Occitane-Immortelle-Divine-2-rgba { color: rgba(216, 163, 4, 1); }
+.L`Occitane-Immortelle-Divine-3-rgba { color: rgba(191, 125, 3, 1); }
+.L`Occitane-Immortelle-Divine-4-rgba { color: rgba(140, 78, 2, 1); }
+.L`Occitane-Immortelle-Divine-5-rgba { color: rgba(114, 43, 2, 1); }
+
+/* Color Theme Swatches in HSLA */
+.L`Occitane-Immortelle-Divine-1-hsla { color: hsla(50, 96, 43, 1); }
+.L`Occitane-Immortelle-Divine-2-hsla { color: hsla(44, 96, 43, 1); }
+.L`Occitane-Immortelle-Divine-3-hsla { color: hsla(39, 96, 38, 1); }
+.L`Occitane-Immortelle-Divine-4-hsla { color: hsla(33, 96, 28, 1); }
+.L`Occitane-Immortelle-Divine-5-hsla { color: hsla(22, 96, 22, 1); }
