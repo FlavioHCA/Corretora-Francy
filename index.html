@@ -20,67 +20,78 @@
         <div class="logo">
             <img src="imagens/Francy_Castro__1_-removebg-preview.png" alt="" class="foto">
         </div>
+
+        <div id="social">
+
+            <a href="https://www.instagram.com/francy_castro_corretora/" target="_blank"><img
+                    src="imagens/logo instagram sem letra.png" alt=""></a>
+
+            <a href="https://wa.me/message/Q57EMR3TK2JEA1" target="_blank"><img
+                    src="imagens/logo whatsapp sem letra.png" alt=""></a>
+
+        </div>
+
     </div>
 
 
     <div id="direita">
-
-        <div class="espaço"></div>
-
-        <div id="menu">
-            <div class="menu_container">
-
-                <input type="radio" name="opcoes_menu" id="Home" class="selecao_botao" onclick="home()">
-
-                <label for="Home" id="Home">Home</label>
-
-                <input type="radio" name="opcoes_menu" id="Contato" class="selecao_botao" onclick="contato()">
-
-                <label for="Contato" id="Contato">Contato</label>
-
-                <input type="radio" name="opcoes_menu" id="Sobre" class="selecao_botao" onclick="sobre()">
-
-                <label for="Sobre" id="Sobre">Sobre</label>
-
-            </div>
-
-        </div>
-
-        <div id="introducao">
-            <p>EM BREVE</p>
-        </div>
 
         <div id="dados">
             <div class="janela_dados">
 
                 <h1 id="titulo_contato">Contato</h1>
 
-                <ul class="opcoes">
-                    <li class="nome">Nome: <br>
-                        <input type="text" name="nome" placeholder="Sua resposta"><br>
-                    </li>
-                    <li class="e-mail">E-mail:<br>
-                        <input type="text" name="email" placeholder="Sua resposta"><br>
-                    </li>
-                    <li class="bairro">Bairro de preferencia:<br>
-                        <input type="text" name="bairro" placeholder="Sua resposta"><br>
-                    </li>
-                    <li class="numero_telefone">WhatsApp para contato:<br>
-                        <input type="number" name="contato" placeholder="Sua resposta"><br>
-                    </li>
-                    <li class="tipo_imovel">Tipo de imovel de preferencia?<br>
-                        <input type="radio" name="tipo_imovel" id="Casa">Casa
-                        <input type="radio" name="tipo_imovel" id="Apartamento">Apartamento
-                    </li>
-                    <input type="submit" value="Enviar" class="botao_enviar">
-                </ul>
+                <div class="opcoes">
+
+                    <label>Nome: <br>
+                        <input class="nome" type="text" name="nome" placeholder="Sua resposta"><br>
+                    </label>
+
+                    <label>E-mail:<br>
+                        <input class="email" type="text" name="email" placeholder="Sua resposta"><br>
+                    </label>
+
+                    <label>Bairro de preferencia:<br>
+                        <input class="bairro" type="text" name="bairro" placeholder="Sua resposta"><br>
+                    </label>
+
+                    <label>Numero de contato:<br>
+                        <input class="telefone" type="number" name="contato" placeholder="Sua resposta"><br>
+                    </label>
+
+                    <label>Tipo de imovel de preferencia?<br>
+                        <select class="tipo_imovel">
+                            <option value="Casa">Casa</option>
+                            <option value="Apartamento">Apartamento</option>
+                        </select>
+                    </label><br>
+
+                    <label>Qual seu tipo de renda ?<br>
+                        <select class="tipo_renda">
+                            <option value="Autonomo">Autonomo</option>
+                            <option value="CLT">CLT</option>
+                        </select>
+                    </label><br>
+
+                    <label>Qual sua renda bruta mensal ?<br>
+                        <select class="renda">
+                            <option value="De 1.400   à   2.000">De Salario minimo à 2.000</option>
+                            <option value="De 2.001   à   2.999">De 2.001 à 2.999</option>
+                            <option value="De 3.000   à   5.000">De 3.000 à 4.999</option>
+                            <option value="De 5.000   à   10.000">De 5.000 à 7.999</option>
+                            <option value="10.000+">De 8.000+</option>
+                        </select>
+                    </label><br>
+
+                    <input type="submit" value="Enviar" class="botao_enviar" onclick="enviar_dados()">
+                    
+                </div>
 
             </div>
         </div>
 
-        <div id="info">
-            <p>EM BREVE</p>
-        </div>
+
+
     </div>
     <script src="index.js"></script>
 </body>

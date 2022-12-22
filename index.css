@@ -25,7 +25,7 @@
         padding: 0px;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.70);
+        background-color: rgba(0, 0, 0, 0.775);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,6 +47,22 @@
         height: 100%;
     }
 
+     /* Social------------------------------------------------------------------------------------ */
+
+     #social {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+    }
+
+    #social a img {
+        height: 50px;
+    }
+
     /* Direita------------------------------------------------------------------------------------- */
 
     #direita {
@@ -56,72 +72,12 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.538);
     }
 
     .espaço {
         width: none;
         height: none;
-    }
-
-    /* Menu------------------------------------------------------------------------------------- */
-
-    #menu {
-        margin: 0px;
-        padding: 0px;
-        background-color: #5b2302be;
-        width: 100%;
-        height: 10vh;
-        z-index: 0;
-    }
-
-    #menu .selecao_botao {
-        display: none;
-    }
-
-    .menu_container {
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        list-style: none;
-        width: 100%;
-        height: 10vh;
-        /* border: green solid 3px; */
-    }
-
-    #menu label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-        height: 10vh;
-        cursor: pointer;
-        text-align: center;
-    }
-
-    #menu label:hover {
-        background-color: #5b2302be;
-    }
-
-    /* Introdução------------------------------------------------------------------------------------- */
-
-    #introducao {
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        min-height: 500px;
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* background-color: yellow; */
-    }
-
-    #introducao p {
-        font-size: 100px;
-        color: #5b2302;
     }
 
     /* Contato------------------------------------------------------------------------------------- */
@@ -132,7 +88,7 @@
         width: 100%;
         min-height: 500px;
         height: 90vh;
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -142,7 +98,7 @@
         margin: 0;
         padding: 0;
         width: 300px;
-        height: 600px;
+        min-height: 700px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -150,15 +106,17 @@
     }
 
     #dados .janela_dados h1 {
-        color: #732C02;
-        font-size: 50px;
+        color: #673f00;
+        font-size: 70px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #08203C;
     }
 
     .opcoes {
         margin: 0;
         padding: 0;
         width: 300px;
-        height: 550px;
+        height: 700px;
         text-decoration: none;
         list-style: none;
         margin: 0px;
@@ -166,7 +124,7 @@
         color: #732C02;
     }
 
-    .opcoes li {
+    .opcoes label {
         background-color: rgba(255, 255, 255, 0.79);
         font-size: 15px;
         margin-top: 5px;
@@ -175,9 +133,10 @@
         width: 300px;
         height: 70px;
         border-radius: 10px;
+        padding: 25px;
     }
 
-    .opcoes li input {
+    .opcoes label input {
         background-color: rgba(255, 255, 255, 0);
         border-style: groove;
         border-top: none;
@@ -186,6 +145,19 @@
         border-bottom: solid #732C02 1px;
         margin-top: 10px;
         margin-left: 30px;
+        color: #732C02;
+    }
+
+    .opcoes label select {
+        background-color: rgba(255, 255, 255, 0);
+        border-style: groove;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: solid #732C02 1px;
+        margin-top: 30px;
+        margin-left: 30px;
+        color: #732C02;
     }
 
     .botao_enviar {
@@ -209,27 +181,6 @@
         box-shadow: none;
         transition: 0.1s;
     }
-
-    /* Sobre------------------------------------------------------------------------------------- */
-
-    #info {
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        min-height: 500px;
-        height: 90vh;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #info p {
-        font-size: 100px;
-        color: #5b2302;
-    }
-
-    @media screen and (min-width: 420px) {}
 
     @media screen and (min-width: 768px) {
 
@@ -261,12 +212,6 @@
             height: 1vh;
         }
 
-        /* Introdução------------------------------------------------------------------------------------- */
-
-        #introducao {
-            height: 89vh;
-            line-height: 1px;
-        }
 
         /* Contato------------------------------------------------------------------------------------- */
 
@@ -288,7 +233,7 @@
             align-items: center;
         }
 
-        .opcoes li {
+        .opcoes label {
             margin-top: 10px;
             padding-left: none;
             padding-top: none;
@@ -302,19 +247,15 @@
             margin-top: 15px;
         }
 
-        /* Sobre------------------------------------------------------------------------------------- */
-
-        #info {
-            height: 89vh;
-            display: none;
-            line-height: 1px;
-        }
-
     }
 
     @media screen and (min-width: 1367px) {
 
         /* Contato------------------------------------------------------------------------------------- */
+
+        #dados .janela_dados h1 {
+            font-size: 100px;
+        }
 
         .opcoes {
             width: 100%;
@@ -325,7 +266,7 @@
             margin-top: 20px;
         }
 
-        .opcoes li {
+        .opcoes label {
             width: 500px;
             height: 70px;
         }
