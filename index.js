@@ -7,21 +7,33 @@ function enviar_dados() {
     let tipo_renda = document.querySelector('.tipo_renda').value;
     let renda = document.querySelector('.renda').value;
 
-    let url = "https://web.whatsapp.com/send?phone=5575992063600&text= _*Olá Francy, quero realizar meu sonho da casa propria*_ %0A%0A Meu nome: %0A *"
-        + nome 
-        + "* %0A%0A Meu e-mail: %0A *"
-        + email
-        + "* %0A%0A Meu bairro de preferencia: %0A *"
-        + bairro
-        + "* %0A%0A Melhor numero para contato: %0A *"
-        + telefone 
-        + "* %0A%0A Tipo de imovel de preferencia? %0A *"
-        + tipo_imovel + "* "
-        + "* %0A%0A Qual seu tipo de renda ? %0A *"
-        + tipo_renda + "* "
-        + "* %0A%0A Qual sua renda bruta mensal ? %0A *"
-        + renda + "* ";
+    if (nome == "") {
+        alert("Campo 'Nome' vazio")
 
-    window.open(url);
+    } else if (email == "") {
+        alert("Campo 'E-mail' vazio")
+    } else if (bairro == "") {
+        alert("Campo 'Bairro de preferencia' vazio")
+    } else if (telefone == "") {
+        alert("Campo 'Numero de contato' vazio")
+    } else {
 
+        let url = "https://web.whatsapp.com/send?phone=5575992063600&text= _*Olá Francy, quero realizar meu sonho da casa propria*_ %0A%0A Meu nome: %0A *"
+            + nome
+            + "* %0A%0A Meu e-mail: %0A *"
+            + email
+            + "* %0A%0A Meu bairro de preferencia: %0A *"
+            + bairro
+            + "* %0A%0A Melhor numero para contato: %0A *"
+            + telefone
+            + "* %0A%0A Tipo de imovel de preferencia? %0A *"
+            + tipo_imovel + "* "
+            + "* %0A%0A Qual seu tipo de renda ? %0A *"
+            + tipo_renda + "* "
+            + "* %0A%0A Qual sua renda bruta mensal ? %0A *"
+            + renda + "* ";
+
+        window.open(url);
+    }
 }
+

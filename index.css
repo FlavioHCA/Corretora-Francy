@@ -83,6 +83,7 @@
     /* Contato------------------------------------------------------------------------------------- */
 
     #dados {
+        /* border: red solid 1px; */
         margin: 0px;
         padding: 0px;
         width: 100%;
@@ -212,28 +213,25 @@
 
         #direita {
             width: 60%;
+            height: 100vh;
         }
-
-        .espaço {
-            width: 100%;
-            height: 1vh;
-        }
-
 
         /* Contato------------------------------------------------------------------------------------- */
 
         #dados {
-            height: 89vh;
+            height: 100vh;
             line-height: 1px;
         }
 
         .janela_dados {
             width: 100%;
-            height: 85%;
+            height: 100vh;
         }
 
         .opcoes {
             width: 100%;
+            height: 80vh;
+            margin-top: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -245,13 +243,22 @@
             padding-left: none;
             padding-top: none;
             padding: 25px;
-            height: 20px;
+            height: 30px;
+            width: 350px;
 
+        }
+
+        .opcoes label input {
+            margin-top: 20px;
+        }
+    
+        .opcoes label select {
+            margin-top: 20px;
         }
 
         .botao_enviar {
             margin-left: 300px;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
     }
@@ -264,18 +271,9 @@
             font-size: 100px;
         }
 
-        .opcoes {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-
         .opcoes label {
+            height: 60px;
             width: 500px;
-            height: 70px;
         }
 
         .botao_enviar {
